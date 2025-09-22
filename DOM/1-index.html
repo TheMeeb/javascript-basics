@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Example</title>
+  </head>
+  <body>
+    <h1 id="title">Old title</h1>
+    <p id="para">some text here</p>
+    <script>
+      const title = document.getElementById("title");
+      title.textContent = "New title";
+      title.style.color = "red";
+      const para = document.getElementById("para");
+      para.innerHTML = "<b>Let's go</b>";
+    </script>
+  </body>
+</html>
