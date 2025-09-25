@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form id="myForm">
+      <input type="text" id="username" placeholder="Enter name" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("myForm");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // stop page reload
+        const value = document.getElementById("username").value;
+        console.log("Form submitted, username:", value);
+      });
+    </script>
+  </body>
+</html>
