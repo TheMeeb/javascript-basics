@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="parent" style="padding: 20px; background: lightblue">
+      Parent
+      <button id="child">Child Button</button>
+    </div>
+
+    <script>
+      document.getElementById("parent").addEventListener("click", () => {
+        console.log("Parent clicked (bubbling)");
+      });
+
+      document.getElementById("child").addEventListener("click", (e) => {
+        console.log("Child clicked");
+        // e.stopPropagation(); // uncomment to stop bubbling
+      });
+    </script>
+  </body>
+</html>
