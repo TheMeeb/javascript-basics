@@ -2,7 +2,14 @@
 <html>
   <body>
     <button id="btn">Click me</button>
-    <input type="text" id="" />
-    <script></script>
+    <input type="text" id="input" placeholder="Type something" />
+    <script>
+      document.getElementById("btn").addEventListener("click", () => {
+        alert("button clicked");
+      });
+      document.getElementById("input").addEventListener("keyboard", (e) => {
+        console.log("key pressed:", e.key);
+      });
+    </script>
   </body>
 </html>
